@@ -16,6 +16,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception{
+        System.out.println("Try lang mag commit");
         Parent root = FXMLLoader.load(getClass().getResource("Frtslogin.fxml"));
 
         Scene scene = new Scene(root);
