@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frateoslogin.ViewEmployeeController">
+   <top>
+      <AnchorPane prefHeight="11.0" prefWidth="640.0" style="-fx-border-color: #595959; -fx-border-width: 0px 0px 2px;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="98.0" layoutX="273.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/FrateosLogo4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" layoutX="22.0" layoutY="14.0" prefHeight="334.0" prefWidth="597.0" style="-fx-border-color: #595959;">
+              <columns>
+                <TableColumn fx:id="id" editable="false" prefWidth="54.0" text="ID" />
+                <TableColumn fx:id="fname" editable="false" prefWidth="78.0" sortable="false" text="First Name" />
+                  <TableColumn fx:id="mname" editable="false" prefWidth="93.0" sortable="false" text="Middle Name" />
+                  <TableColumn fx:id="lname" editable="false" prefWidth="75.0" sortable="false" text="Last Name" />
+                  <TableColumn fx:id="role" editable="false" prefWidth="75.0" sortable="false" text="Role" />
+                  <TableColumn fx:id="phone" editable="false" prefWidth="85.0" sortable="false" text="Phone" />
+                  <TableColumn fx:id="address" editable="false" prefWidth="135.0" sortable="false" text="Address" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
